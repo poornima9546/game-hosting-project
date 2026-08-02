@@ -1,0 +1,89 @@
+/* Reset some default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page background */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #dbeafe, #ede9fe);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Main container */
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Heading */
+h1 {
+    color: #1e3a8a;
+    margin-bottom: 15px;
+    font-size: 42px;
+}
+
+/* Status message */
+#status {
+    background: #eef2ff;
+    color: #4338ca;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Game board */
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 12px;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+/* Game cells */
+.cell {
+    width: 100px;
+    height: 100px;
+    background: white;
+    border: 2px solid #6366f1;
+    border-radius: 15px;
+    font-size: 42px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+/* Hover effect */
+.cell:hover {
+    background: #eef2ff;
+    transform: scale(1.05);
+}
+
+/* Restart button */
+#restart {
+    background: linear-gradient(to right, #2563eb, #7c3aed);
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Restart button hover */
+#restart:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
